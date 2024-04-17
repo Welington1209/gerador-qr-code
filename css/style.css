@@ -7,21 +7,24 @@
 }
 
 body {
-  background-color: rgb(77, 240, 240);
+  background-color: #555;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 100vw;
+
 }
 
 .container {
-  background-color: #fff;
+  background-color: #bcbcbc;
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 2rem;
+  max-width: 90%;
 }
 
 .container p {
@@ -29,7 +32,7 @@ body {
 }
 
 .container h1 {
-  color: #000;
+  color: #111;
   margin-bottom: 1.5rem;
 }
 
@@ -43,7 +46,8 @@ body {
 .container form input {
   padding: 1rem;
   border-radius: 5px;
-  border: 1px solid #444;
+  border: 1px solid #555;
+  background-color: #bcbcbc;
 }
 
 .container form input[type="submit"] {
@@ -53,6 +57,13 @@ body {
   font-size: 1.1rem;
   letter-spacing: 1.5px;
   margin-bottom: 1rem;
+  cursor: pointer;
+  transition: .5s;
+  opacity: .8;
+}
+
+.container form input[type="submit"]:hover {
+  opacity: 1;
 }
 
 #container-img {
